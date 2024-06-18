@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 4rem;
+  align-items: center;
+  a {
+    color: #3e846f;
+  }
+}
+
+header > figure {
+  background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  h1 {
+    color: white;
+  }
+}
+
+main {
+  padding: 0 1rem;
+}
+
+form {
+  padding: 3rem 0;
+  fieldset {
+    padding: 0;
+    border: none;
+    legend {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    ul {
+      padding: 0 0 1rem 0;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+      li {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        input {
+          border: none;
+          box-shadow: 1px 1px 2px 0px lightgray;
+        }
+      }
+    }
+    button {
+      display: block;
+      margin: auto;
+      background-color: #3e846f;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.plans-section,
+.planted-section {
+  padding: 2rem 0 3rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  .card {
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    figure {
+      background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+      flex: 11;
+      background-position: center;
+      background-size: cover;
+    }
+    div {
+      padding: 1rem;
+      flex: 5;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .card-date {
+        justify-self: flex-end;
+      }
+      .card-name {
+        align-self: flex-end;
+      }
+      .card-button {
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        background-color: #b93857;
+        color: white;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+footer {
+  section {
+  }
+}
