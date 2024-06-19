@@ -6,7 +6,55 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+  background-color: #fcf5fc;
+}
+
+.content-wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin-bottom: 4rem;
+}
+
+.header-nav > a,
+header h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+form,
+footer nav {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.form-button,
+.card-date,
+.card-name {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h2,
+.card-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-name {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 a {
@@ -16,7 +64,7 @@ a {
 .header-nav {
   display: flex;
   justify-content: space-evenly;
-  height: 4rem;
+  height: 60px;
   align-items: center;
   a {
     color: #3e846f;
@@ -48,7 +96,8 @@ form {
     padding: 0;
     border: none;
     legend {
-      font-size: 2rem;
+      font-size: 32px;
+      line-height: 43.58px;
       padding-bottom: 1rem;
     }
     ul {
@@ -63,6 +112,8 @@ form {
         input {
           border: none;
           box-shadow: 1px 1px 2px 0px lightgray;
+          height: 45px;
+          font-size: 25px;
         }
       }
     }
@@ -74,7 +125,7 @@ form {
       padding: 1rem 2rem;
       border-radius: 10px;
       border: none;
-      font-size: 1.2rem;
+      font-size: 24px;
     }
   }
 }
@@ -125,5 +176,32 @@ h2 {
 
 footer {
   section {
+    background-color: #9e6d52;
+    max-width: 100%;
+    height: 336px;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    figure {
+      flex: 1;
+      .footer-imgs {
+        object-fit: cover;
+        height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: black;
+      font-size: 24px;
+    }
   }
 }
