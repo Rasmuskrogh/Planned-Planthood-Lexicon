@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="page2.css" />
+    <link rel="stylesheet" href="sharedStyles.css" />
+    <link rel="stylesheet" href="fonts.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="content-wrapper">
       <header>
         <nav class="header-nav">
-          <a href="#">PLANER</a>
-          <a href="#">HISTORIK</a>
-          <a href="#">TIPS</a>
-          <a href="#">LOGGA UT</a>
+          <a href="#plans">PLANER</a>
+          <a href="#history">HISTORIK</a>
+          <a href="https://www.impecta.se/sv/planera-och-plantera-2">TIPS</a>
+          <a href="index.html">LOGGA UT</a>
         </nav>
         <figure>
           <img src="./assets/Logo.svg" alt="heart logo" />
@@ -37,7 +39,7 @@
             <button class="form-button">LÄGG TILL</button>
           </fieldset>
         </form>
-        <h2>Dina planerade planteringar:</h2>
+        <h2 id="plans">Dina planerade planteringar:</h2>
         <section class="plans-section">
           <article class="card">
             <figure class="card-img"><img src="" alt="" /></figure>
@@ -49,7 +51,7 @@
             </div>
           </article>
         </section>
-        <h2>Dina planterade planteringar:</h2>
+        <h2 id="history">Dina planterade planteringar:</h2>
         <section class="planted-section">
           <article class="card">
             <figure class="card-img"><img src="" alt="" /></figure>

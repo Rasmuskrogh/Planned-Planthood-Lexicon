@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Maven+Pro:wght@400..900&family=Open+Sans:wght@300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fcf6fc;
+}
+
+.content-wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin-bottom: 4rem;
+}

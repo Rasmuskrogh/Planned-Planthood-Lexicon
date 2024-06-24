@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planned Planthood</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="sharedStyles.css" />
+    <link rel="stylesheet" href="fonts.css" />
   </head>
   <body>
     <div class="content-wrapper">
@@ -21,10 +23,10 @@
           </figure>
         </section>
         <nav class="header-nav">
-          <a href="#">PLANER</a>
-          <a href="#">HISTORIK</a>
-          <a href="#">TIPS</a>
-          <a href="#">LOGGA IN</a>
+          <a href="#plans">PLANER</a>
+          <a href="#history">HISTORIK</a>
+          <a href="https://www.impecta.se/sv/planera-och-plantera-2">TIPS</a>
+          <a href="page2.html">LOGGA IN</a>
         </nav>
       </header>
       <main>
@@ -44,7 +46,9 @@
           </article>
         </section>
         <hr />
-        <h2 class="card-section-header">Våra planerade planteringar:</h2>
+        <h2 class="card-section-header" id="plans">
+          Våra planerade planteringar:
+        </h2>
         <section class="planned-planting">
           <article class="card">
             <figure class="card-img" id="card-1">
@@ -116,7 +120,7 @@
         <button class="card-section-button">Visa fler</button>
         <section class="season-section-2">
           <article>
-            <h2>Våra tidigare odlingar</h2>
+            <h2 id="history">Våra tidigare odlingar</h2>
             <p>
               Våren är äntligen här i kollektivet! <br />
               Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc

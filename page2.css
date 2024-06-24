@@ -1,20 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #fcf5fc;
-}
-
 .content-wrapper {
-  background-color: white;
-  max-width: 1000px;
-  margin-bottom: 4rem;
+  border-inline: 1px solid #d9d4d9;
 }
 
 .header-nav > a,
@@ -35,6 +20,7 @@ footer nav {
 }
 
 .form-button,
+.card-button,
 .card-date,
 .card-name {
   font-family: "Open Sans", sans-serif;
@@ -45,7 +31,7 @@ footer nav {
 }
 
 h2,
-.card-title {
+.card-header {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -64,7 +50,7 @@ a {
 .header-nav {
   display: flex;
   justify-content: space-evenly;
-  height: 60px;
+  padding: 1.5rem;
   align-items: center;
   a {
     color: #3e846f;
@@ -75,7 +61,7 @@ header > figure {
   background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
-  height: 22rem;
+  aspect-ratio: 3/1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +69,7 @@ header > figure {
   gap: 1rem;
   h1 {
     color: white;
+    font-size: 40px;
   }
 }
 
@@ -115,6 +102,9 @@ form {
           height: 45px;
           font-size: 25px;
         }
+        label {
+          font-size: 20px;
+        }
       }
     }
     button {
@@ -126,12 +116,14 @@ form {
       border-radius: 10px;
       border: none;
       font-size: 24px;
+      box-shadow: 0px 3px 3px #c0c0c0;
     }
   }
 }
 
 h2 {
   text-align: center;
+  font-size: 32px;
 }
 
 .plans-section,
@@ -141,31 +133,38 @@ h2 {
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   .card {
-    min-height: 20rem;
     display: flex;
     flex-direction: column;
+    aspect-ratio: 5/7;
+    box-shadow: 3px 3px 3px #c0c0c0;
     figure {
       background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 
-      flex: 11;
+      flex: 4;
       background-position: center;
       background-size: cover;
     }
     div {
       padding: 1rem;
-      flex: 5;
+      flex: 1;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      .card-header {
+        font-size: 24px;
+      }
       .card-date {
         justify-self: flex-end;
+        font-size: 16px;
       }
       .card-name {
         align-self: flex-end;
+        font-size: 16px;
       }
       .card-button {
         padding: 5px;
         border-radius: 10px;
         border: none;
+        font-size: 15px;
         background-color: #b93857;
         color: white;
         align-self: flex-end;
@@ -178,7 +177,7 @@ footer {
   section {
     background-color: #9e6d52;
     max-width: 100%;
-    height: 336px;
+    aspect-ratio: 3/1;
     padding: 2rem;
     display: flex;
     gap: 1rem;
@@ -188,20 +187,106 @@ footer {
       .footer-imgs {
         object-fit: cover;
         height: 100%;
-        max-width: 100%;
+        width: 100%;
         display: block;
         margin: auto;
       }
     }
   }
   nav {
-    height: 80px;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     a {
       color: black;
       font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  header {
+    figure {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+  form {
+    padding: 2rem 0;
+    fieldset {
+      legend {
+        text-align: center;
+        font-size: 24px;
+      }
+      ul {
+        flex-direction: column;
+        li {
+          input {
+            height: 36px;
+          }
+          label {
+            font-size: 12px;
+          }
+        }
+      }
+      .form-button {
+        font-size: 16px;
+        padding: 0.6rem 1rem 0.4rem 1rem;
+      }
+    }
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .plans-section,
+  .planted-section {
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      div {
+        .card-header {
+          font-size: 16px;
+        }
+        .card-date {
+          font-size: 10px;
+        }
+        .card-name {
+          font-size: 10px;
+        }
+        .card-button {
+          display: none;
+        }
+      }
+    }
+  }
+  footer {
+    section {
+      aspect-ratio: 3/2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      figure {
+        min-height: 0;
+        width: 100%;
+        overflow: hidden;
+        .footer-imgs {
+          object-fit: contain;
+          min-height: 0;
+          height: auto;
+          max-width: 100%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    nav {
+      a {
+        font-size: 14px;
+      }
     }
   }
 }
