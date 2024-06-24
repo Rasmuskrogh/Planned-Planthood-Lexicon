@@ -1,0 +1,51 @@
+.header-nav > a,
+.main-heading,
+.nav-menu-mobile,
+.logged-in-heading,
+.information-wrapper > h3 {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+form,
+.season-section-1,
+.season-section-2,
+.footer-nav {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.season-section-1 h2,
+.season-section-1 button,
+.season-section-2 h2,
+.season-section-2 button,
+.card-date,
+.card-button,
+.card-section-button .form-button {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.card-name {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#plans,
+#history,
+.card-header,
+.card-section-header,
+.card-header {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

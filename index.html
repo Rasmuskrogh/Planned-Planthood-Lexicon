@@ -10,8 +10,19 @@
   </head>
   <body>
     <div class="content-wrapper">
+      <div class="nav-menu-mobile">
+        <img class="closing" src="./assets/X.svg" alt="closing icon">
+        <nav>
+          <a href="#">PLANER</a>
+          <a href="#">HISTORIK</a>
+          <a href="https://www.impecta.se/sv/planera-och-plantera-2">TIPS</a>
+          <a href="page2.html">LOGGA IN</a>
+        </nav>
+      </div>
       <header>
         <section class="header-section">
+          <div class="toggle-magic toggle"></div>
+          <img class="burger-menu" src="./assets/burgir.svg" alt="burger menu icon">
           <figure class="header-planthand figures">
             <img src="./assets/Logo.svg" alt="image of hand holding a plant" />
           </figure>
@@ -30,7 +41,7 @@
         </nav>
       </header>
       <main>
-        <h1>PLANNED PLANTHOOD</h1>
+        <h1 class="main-heading">PLANNED PLANTHOOD</h1>
         <section class="season-section-1">
           <figure class="season-section-1-img figures">
             <img src="./assets/Vectorseedpackage.svg" alt="" />
@@ -59,7 +70,7 @@
               <p class="card-date">15 april 2024</p>
               <p class="card-name">Rico Coolio</p>
               <button class="card-button">TA BORT</button>
-            </div>
+              <img  class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
           </article>
           <article class="card">
             <figure class="card-img" id="card-2">
@@ -70,6 +81,7 @@
               <p class="card-date">1 april 2024</p>
               <p class="card-name">Jocke</p>
               <button class="card-button">TA BORT</button>
+              <img class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
             </div>
           </article>
           <article class="card">
@@ -81,6 +93,7 @@
               <p class="card-date">1 april 2024</p>
               <p class="card-name">Majvor och P-Å</p>
               <button class="card-button">TA BORT</button>
+              <img class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
             </div>
           </article>
           <article class="card">
@@ -92,6 +105,7 @@
               <p class="card-date">15 april 2024</p>
               <p class="card-name">Frippe</p>
               <button class="card-button">TA BORT</button>
+              <img  class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
             </div>
           </article>
           <article class="card">
@@ -103,6 +117,7 @@
               <p class="card-date">1 aril 2024</p>
               <p class="card-name">Emma på 4an</p>
               <button class="card-button">TA BORT</button>
+              <img class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
             </div>
           </article>
           <article class="card">
@@ -114,6 +129,7 @@
               <p class="card-date">15 april 2024</p>
               <p class="card-name">Perra J</p>
               <button class="card-button">TA BORT</button>
+              <img class="trashcan" src="./assets/trash-2.svg" alt="trashcan">
             </div>
           </article>
         </section>
@@ -138,14 +154,20 @@
           <div class="information-wrapper">
             <h3>Vi hörs!</h3>
             <div>
-              <p><img src="" alt="" /> 0701-234567</p>
-              <p>mail@mail.se <img src="" alt="" /></p>
+              <p><img class="phone-icon" src="./assets/phone.svg" alt="phone icon" /> 0701-234567</p>
+              <p>mail@mail.se <img class="mail-icon" src="./assets/mail.svg" alt="mail icon" /></p>
             </div>
           </div>
-          <figure><img src="./assets/Logo.svg" alt="" /></figure>
+          <figure><img src="./assets/Logo.svg" alt="heart icon" /></figure>
         </section>
         <nav class="footer-nav"><a href="">Till toppen av sidan</a></nav>
       </footer>
     </div>
+    <script>
+      document.querySelector(".toggle").addEventListener("click", () => {
+        document.querySelector(".nav-menu-mobile").classList.toggle("open");
+        document.querySelector("body").classList.toggle("open")
+      });
+    </script>
   </body>
 </html>

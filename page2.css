@@ -2,49 +2,16 @@
   border-inline: 1px solid #d9d4d9;
 }
 
-.header-nav > a,
-header h1 {
-  font-family: "Maven Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-form,
-footer nav {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.form-button,
-.card-button,
-.card-date,
-.card-name {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-h2,
-.card-header {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.card-name {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 a {
   text-decoration: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.toggle-magic {
+  display: none;
 }
 
 .header-nav {
@@ -169,6 +136,9 @@ h2 {
         color: white;
         align-self: flex-end;
       }
+      .trashcan {
+        display: none;
+      }
     }
   }
 }
@@ -207,9 +177,28 @@ footer {
 
 @media screen and (max-width: 685px) {
   header {
+    .burger-menu {
+      display: block;
+      height: 2rem;
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      z-index: 3;
+    }
+    .toggle-magic {
+      display: block;
+      height: 2rem;
+      width: 2.5rem;
+      position: absolute;
+      top: 8px;
+      right: 5px;
+      z-index: 5;
+    }
     figure {
+      padding-top: 5rem;
       h1 {
         font-size: 32px;
+        padding-bottom: 4rem;
       }
     }
   }
@@ -259,6 +248,11 @@ footer {
         }
         .card-button {
           display: none;
+        }
+        .trashcan {
+          display: block;
+          align-self: flex-end;
+          justify-self: flex-end;
         }
       }
     }
