@@ -519,3 +519,9 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 460px) {
+  .planned-planting {
+    grid-template-columns: 1fr;
+  }
+}
